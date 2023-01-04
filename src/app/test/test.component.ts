@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./test.component.css']
 })
 export class TestComponent {
+  public name = "test";
+  public isDisabled = false;
 
+  onClick = (value: String) => {
+    console.log("Hello Rafael");
+    console.log(value);
+  }
 }
